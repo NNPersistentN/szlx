@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport" content = "width = device-width, initial-scale =1.0,maximum-scale =1.0. user-scalable =  0"/> 
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <link rel="stylesheet" href="{CSS_PATH}mobile/index.css">
+    <link rel="stylesheet" href="{CSS_PATH}mobile/swiper.min.css">
+</head>
+<body>
+<!-- 头部 -->
+<header>
+    <div class="header-box">
+        <!-- <img class="imgs" src="{IMG_PATH}mobile/logo.png" alt=""> -->
+        <span>神州</span>
+    </div>
+</header>
+<!-- 轮播图 -->
+<div class="swiper-container banner">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+    </div>
+</div>
+<!-- 导航 -->
+{pc:content action="category" catid="0" num="25" order="listorder" ASC moreinfo="1"}
+<div class="section">
+
+    {loop $data $r}
+    <div class="section-box">
+        <figure>
+            <a href="{$r[url]}"><img class="images" src="{$r[image]}" alt=""></a>
+            <figcaption>
+                <a class="as e" href="{$r[url]}">{$r[catname]}</a>
+            </figcaption>
+        </figure>
+    </div>
+    {/loop}
+{/pc}
+
+</div>
+
+<div class="section-one">
+    <h3>服务体系</h3>
+    <div class="center">
+    {pc:content action="position" posid="1" num="1"}
+        {loop $data $r}
+        <div class="center-one">
+        <a style="text-decoration: none"  href="{$r[url]}">
+            <p class="center-t">免费体检</p>
+            <p class="center-b">健康由你掌控</p>
+            <img src="{IMG_PATH}mobile/Layer%207.png" alt="">
+            </a>
+        </div>
+        {/loop}
+    {/pc}
+
+    {pc:content action="position" posid="2" num="1" } 
+        {loop $data $v}
+        <div class="center-one">
+        <a style="text-decoration: none" href="{$v[url]}">
+            <p class="center-t">助学贷款</p>
+            <p class="center-b">前程我来把关</p>
+            <a href="{$v[url]}">
+                <img src="{IMG_PATH}mobile/Capa%201%20副本.png" alt="">
+            </a>
+        </a>
+        </div>
+        {/loop}
+    
+    {/pc}
+    </div>
+    <div class="bottom">
+        <div class="bottom-one">
+            <img src="{IMG_PATH}mobile/Layer%205.png" alt="">
+            <div class="bottom-right">
+                <p class="center-t">免费试听</p>
+                <p class="center-b">千人免费学设计</p>
+            </div>
+        </div>
+        {pc:content action="lists" catid="15" num="15"}
+        <div class="bottom-one">
+            {loop $data $r}
+            <a href="{<1></1>r[url]}">
+            <img src="{IMG_PATH}mobile/Layer%206.png" alt="">
+            <div class="bottom-right">
+                <p class="center-t">神州动态</p>
+                <p class="center-b">近在咫尺</p>
+            </div>
+            </a>
+            {/loop}
+        </div>
+        {/pc}
+
+    {pc:content action="position" posid="16"}
+        {loop $data $r}
+        <div class="bottom-one">
+            <a href="{$r[url]}">
+            <img src="{IMG_PATH}mobile/Layer%204.png" alt="">
+            <div class="bottom-right">
+                <p class="center-t">关于我们</p>
+                <p class="center-b">实力保证</p>
+            </div>
+            </a>
+        </div>
+        {/loop}
+        {/pc}
+    </div>
+</div>
+
+<div class="footer">
+    <div class="left active"><img src="{IMG_PATH}mobile/search.png" alt="">校区查询</div>
+    <button type="button" class="center"><img src="{IMG_PATH}mobile/call%20out.png" alt="">免费拨打</button>
+    <div class="right active"><img src="{IMG_PATH}mobile/feedback.png" alt="">在线沟通</div>
+</div>
+
+
+
+
+
+</body>
+</html>
+<script src="{JS_PATH}mobile/swiper.min.js"></script>
+<script src="{JS_PATH}mobile/index.js"></script>

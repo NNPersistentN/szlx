@@ -1,0 +1,46 @@
+{template "content","header"}
+{pc:content action="lists" catid="$catid" num="25" order="listorder" ASC moreinfo="1"}
+<div class="section" style="padding-bottom: 0">
+    <div class="section-top"><span><a href="{siteurl($siteid)}">首页</a></span>〉<span>{catpos($catid)}</span></div>
+    {loop $data $r}
+    <div class="section-about mt">
+        <h6>{$r[title]}</h6>
+        <div class="section-mt">
+            <div class="mt-left"><img src="{$r[thumb]}" alt=""></div>
+            <div class="mt-right">
+                <a href="{$r[url]}">
+                <p>{$r[description]}</p>
+                </a>
+            </div>
+        </div>
+        <div class="section-mtbom">
+            <span>2016.4.22</span>
+            <span>点击量:283977</span>
+            <span>点击量:283997</span>
+        </div>
+    </div>
+    {/loop}
+</div>
+    {/pc}
+
+<div class="footer">
+    <ul>
+        <li class="lis btn"><a href="">←</a></li>
+        <li class="lis"><a href="">1</a></li>
+        <li class="lis"><a href="">2</a></li>
+        <li class="lis"><a href="">3</a></li>
+        <!--<li class="lis"><a href="">4</a></li>-->
+        <!--<li class="lis"><a href="">5</a></li>-->
+        <li class="lis sl"><a href="">......</a></li>
+        <li class="lis"><a href="">30</a></li>
+        <li class="lis btn btn2"><a href="">→</a></li>
+        <li class="lis one"><div>跳转到</div><span><input type="text"></span><div class="ye">页</div></li>
+        <li class="lis"><a href=""></a></li>
+    </ul>
+    <div class="footer-box gx">
+        <p>Copyright?2013-2016版权所有 优逸客科技有限公司</p>
+        <p>联系电话：400-888-6747 晋ICP备 13006051 号</p>
+    </div>
+</div>
+
+{template "content","footer"}

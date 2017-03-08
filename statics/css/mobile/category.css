@@ -1,0 +1,903 @@
+
+li{
+    list-style: none;
+}
+.section{
+    width:100%;
+    padding: 0.20rem 0.25rem;
+    box-sizing: border-box;
+}
+.section .section-top{
+    font-size: 12px;
+}
+.section .section-top.gx{
+    margin-bottom:0.3rem;
+    margin-top: 0.05rem;
+}
+.section-header{
+    height:0.80rem;
+    border-radius: 0.07rem;
+    border:0.02rem solid #01B5FF;
+    margin:.20rem 0;
+}
+
+.section-header button{
+    height:100%;
+    width:33.333%;
+    border-radius: 0.07rem;
+    float: left;
+    font-size: 14px;
+    border:none;
+    outline: none;
+    color: #111;
+    background: rgba(0,0,0,0);
+}
+.section-header button>a{
+    color: #111;
+    width: 100%;
+    height: 100%;
+    display:block;
+    line-height: 0.8rem;
+}
+.section-header button:after{
+    content: '';
+    display: block;
+}
+
+/*.section-header button:nth-child(1){
+    background: #01b5ff;
+}
+.section-header button:nth-child(1) a{
+    color: #fff;
+}*/
+.section-center.active{
+    display: block;
+}
+.section-center{
+    display: none;
+}
+.section-center ul{
+    width:100%;
+    padding: 0;
+    margin: 0;
+}
+.section-center ul li{
+    height:2.70rem;
+    width:100%;
+    box-sizing: border-box;
+    background: #fff;
+    padding: .20rem 0.30rem;
+}
+.section-center ul .list{
+    height:1.85rem;
+    margin-bottom: 0.1rem;
+}
+
+.section-center ul li .left{
+    width:2.30rem;
+    height:2.30rem;
+    float: left;
+    border-radius: 0.07rem;
+    margin-right: 0.28rem;
+    overflow: hidden;
+    /*background: url("../../images/mobile/liuz.png") no-repeat center -0.25rem /cover;*/
+
+}
+.section-center ul li .left img{
+    width: 100%;
+    border-radius: 0.07rem;
+}    
+
+.section-center ul li .left.gx{
+    width:1.93rem;
+    height:1.45rem;
+
+}
+
+.section-center ul li .left img{
+    width:100%;
+}
+
+.section-center ul li .right{
+    width:3.72rem;
+    float: left;
+}
+.section-center ul li .right .top{
+    font-size: 12px;
+    color: #FF9300;
+    float: right;
+    width:100%;
+}
+.section-center ul li .right .top .top-left{
+    font-size: 14px;
+    color: #111;
+    float: left;
+    width:1.70rem;
+    border-bottom:.01rem dashed #999 ;
+    padding-bottom: 0.10rem;
+    margin-bottom: 0.10rem;
+}
+.section-center ul li .right .top .top-left.gx{
+    width:1.05rem;
+    border-bottom:.01rem dotted #999;
+    font-weight: bold;
+    margin-top:0.22rem;
+}
+.section-center ul li .right .top .top-left.gx small{
+    float: left;
+    width: 2rem;
+    color: #818181;
+    margin-top: -0.24rem;
+    margin-left: 0.89rem;
+}
+
+.section-center ul li .right .top .top-right{
+    float: right;
+}
+
+.section-center ul li .right .top .top-right a{
+    color: #FF9300;
+    text-decoration: none;
+}
+
+.section-center ul li .right .h6{
+    font-size: 12px;
+    color: #01B5FF;
+}
+.section-center ul li .right .h6.gx{
+    color: #94D43B;
+    font-size: 0.25rem;
+    margin-bottom: 0;
+}
+
+.section-center .right .right-section{
+    font-size: 12px;
+    padding-top: 0.15rem;
+    width:3.00rem;
+    line-height: 1.5;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient: vertical;
+    margin-top: 0.15rem;
+}
+.section-center .right .right-section.gx{
+    margin: 0;
+    padding-top: 0;
+}
+
+
+
+
+.footer{
+    height:0.70rem;
+    padding: .20rem 0.30rem 0;
+    background: #fff;
+}
+.footer ul{
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+.footer ul .lis{
+    float: left;
+    font-size: 10px;
+    width:0.42rem;
+    height:0.42rem;
+    text-align: center;
+    line-height: 0.28rem;
+    border-radius: 50%;
+    border:1px solid #BDBDBD;
+    margin-right: 0.05rem;
+    position: relative;
+}
+.footer ul .lis:last-child{
+    background: url("../../images/mobile/4.png")no-repeat center center/cover;
+    background-size: 100%;
+}
+
+.footer .ye{
+    margin: 0;
+    padding-top: 0.70rem;
+
+}
+.footer ul .btn{
+    width:0.80rem;
+    border-radius: 0.20rem;
+    line-height:0.27rem;
+}
+.footer ul .btn a{
+    width: 0.68rem!important;
+    /*height: 0.27rem!important;*/
+    border-radius: 0.20rem!important;
+    display: block;
+}
+.footer .lis.one{
+}
+
+.footer .lis.one div{
+    float: left;
+    border: 0!important;
+    padding-top: .070rem!important;
+}
+.footer .lis span{
+    width:0.80rem;
+    height:0.40rem;
+    display: block;
+    border:1px solid #E5E5E5;
+    border-radius: 0.20rem;
+    float: left;
+}
+.footer input{
+    width:0.35rem;
+    height:0.25rem;
+    margin-top: .03rem;
+    margin-right: 0.01rem;
+    border-radius: .20rem;
+    border:1px solid #E3E2E3;
+    outline:none;
+    padding-left: 0.35rem;
+}
+.footer ul .one{
+    width:auto;
+    border:none;
+}
+
+.footer ul .lis a{
+    text-decoration: none;
+    color: #161516;
+    display: block;
+    position: absolute;
+    left:0;
+    top:0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 0.30rem;
+    width: 0.30rem;
+    border:1px solid #060606;
+    border-radius: 50%;
+}
+.footer ul .sl{
+    border:none;
+}
+.footer ul .sl a{
+    border:none;
+}
+
+.footer ul li:last-child{
+    margin-right: 0!important;
+}
+
+
+.footer-box{
+    height:0.70rem;
+    font-size: 12px;
+    text-align: center;
+    line-height: 0.5;
+    color: #666666;
+}
+.footer-box.gx{
+    margin-top: 0.2rem;
+}
+footer  ul lis{
+    /*width:0.32rem;*/
+    /*height:0.32rem;*/
+    /*background: url("../../images/mobile/yuan");*/
+}
+
+
+/*助学贷款*/
+.section-about .gaishu.zx{
+    box-sizing: border-box;
+    margin-left: 0.4rem!important;
+    /*box-sizing: border-box;*/
+    padding-left: 0!important;
+}
+.section-about .zx{
+    font-size: 0.22rem;
+    margin:0.1rem 0 0 0.20rem!important;
+    color: #666;
+}
+.section-about .zx.pl{
+    margin-top: 0.45rem!important;
+}
+.section-about .zx-bottom{
+    width:100%;
+    height:3.62rem;
+    background: #474747;
+    margin-top: 0.3rem;
+}
+
+
+
+
+
+
+.section-about{
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 0.2rem;
+    margin-bottom: 0.10rem;
+}
+/*助学贷款*/
+.section-about.zx{
+    padding: 0!important;
+}
+.section-about.zx p{
+    padding-left: 0.2rem!important;
+    padding-right: 0.2rem!important;
+}
+.section-about.zx h6{
+    margin-left: 0.2rem;
+}
+
+.section-about .fengxiang{
+    width:100%;
+    padding: 0 0.2rem;
+    font-size: 0.25rem;
+    height: .40rem;
+    line-height: 0.4rem;
+    margin-top: 0.26rem;
+    margin-bottom: 0.30rem;
+    font-weight: bold;
+}
+.section-about .fengxiang-left{
+    height: 100%;
+    float: left;
+}
+.section-about .fengxiang-left span{
+    float: left;
+    margin-right: .1rem;
+}
+
+.section-about .fengxiang a{
+    display: block;
+    width:.4rem;
+    height:.4rem;
+    float: left;
+    margin-right: 0.2rem;
+}
+.section-about .fengxiang-left a:nth-child(2){
+    background: url("../../images/mobile/fx1.png") no-repeat;
+    background-size: 0.4rem;
+}
+.section-about .fengxiang-left a:nth-child(3){
+    background: url("../../images/mobile/fx2.png") no-repeat;
+    background-size: 0.4rem;
+}
+.section-about .fengxiang-left a:nth-child(4){
+    background: url("../../images/mobile/fx3.png") no-repeat;
+    background-size: 0.4rem;
+}
+.section-about .fengxiang-left a:nth-child(5){
+    background: url("../../images/mobile/fx4.png") no-repeat;
+    background-size: 0.4rem;
+}
+.section-about .fengxiang-left a:nth-child(6){
+    background: url("../../images/mobile/fx5.png") no-repeat;
+    background-size: 0.4rem;
+}
+.section-about .fengxiang-right{
+    float: right;
+    margin-right: 0.2rem;
+}
+.section-about .fengxiang-right a:nth-child(1){
+    background: url("../../images/mobile/fx6.png") no-repeat;
+    background-size: 0.4rem;
+}
+.section-about .fengxiang-right a:nth-child(2){
+    background: url("../../images/mobile/fx7.png") no-repeat;
+    background-size: 0.4rem;
+}
+
+
+
+
+.section-about:nth-child(2){
+    margin-top: 0.3rem;
+
+}
+
+.section-about h6{
+    font-size: 12px;
+    color: #111;
+    padding-left: 0.2rem;
+    margin: 0.3rem 0 0 0;
+    border-left: 2px solid #01B5FF;
+}
+
+.section-about .gaishu{
+    width: 6.40rem;
+    border-top: 0.01rem dashed #999;
+    font-size: 12px;
+    text-align: justify;
+    color: #666;
+    line-height: 1.5;
+    margin-left: 0.2rem;
+}
+.section-about .gaishu:nth-child(2){
+    padding-top: 0.15rem;
+}
+
+.section-about .gaishu.l{
+    border: 0;
+}
+
+.section-about .wenhua{
+    width:6.40rem;
+    margin-left: 0.2rem;
+    font-size: 14px;
+    color: #fff;
+    height: 2.06rem;
+}
+.section-about .wenhua-one{
+    width:33.3334%;
+    height: 100%;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    line-height: 2.06rem;
+    box-sizing: border-box;
+    text-shadow: 0 0.03rem 0.02rem #1452DC;
+}
+.section-about .wenhua-one:nth-child(1){
+    background: url("../../images/mobile/zhuanz.png") no-repeat center center/cover;
+    background-size: 1.33rem;
+}
+.section-about .wenhua-one:nth-child(2){
+    background: url("../../images/mobile/kb2.png") no-repeat center center/cover;
+    background-size: 1.33rem;
+    text-shadow: 0 0.03rem 0.02rem #DE4910;
+
+}
+.section-about .wenhua-one:nth-child(3){
+    background: url("../../images/mobile/koubei.png") no-repeat center center/cover;
+    background-size: 1.33rem;
+    text-shadow: 0 0.03rem 0.02rem #DB223D;
+}
+.section-about .wenhua-one.box{
+    width:100%;
+    background: url("../../images/mobile/koubei.png") no-repeat center center/cover;
+    background-size: 1.68rem;
+    text-shadow: 0 0.03rem 0.02rem #DB223D;
+}
+.wenhua.xq{
+    border-top:0.01rem dashed #999;
+    margin-top: .15rem;
+}
+.wenhua-left{
+    width:2.80rem;
+    height:2.80rem;
+    float: left;
+    border-radius: 0.07rem;
+    margin-top: 0.3rem;
+    background: url("../../images/mobile/liuz.png") no-repeat center -.25rem / cover;
+}
+.wenhua-right{
+    float: left;
+    color: #111;
+    width:3.05rem;
+    margin-left: 0.3rem;
+}
+.wenhua-right .ppt{
+    /*width:1.84rem;*/
+    margin-left: 0.8rem;
+    line-height: 1.5;
+    margin-top: -0.4rem!important;
+}
+
+.wenhua-right h5{
+    font-size: .39rem;
+    margin:.50rem 0;
+}
+.wenhua-right h5 span{
+    font-size: 0.25rem;
+    color: #0DB8FF;
+}
+.wenhua-right p span{
+    font-weight: bold;
+}
+.wenhua-right p:nth-child(3){
+    margin-top: -.14rem;
+    line-height: 1.5;
+}
+.wenhua-right p:nth-child(4){
+    margin-top: -.2rem;
+}
+
+
+
+
+/*关于我们*/
+.header-gy{
+    width:100%;
+    height:2.26rem;
+    background: #fff;
+    font-size: 0.25rem;
+}
+.header-gy a{
+    color: #6B6B6B;
+    font-weight: 500;
+}
+.header-gy figure{
+    width:25%;
+    height:100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.header-gy figure figcaption{
+    margin-top:1.69rem;
+}
+
+.header-gy a:nth-child(1) figure{
+    background: url("../../images/mobile/z1.png")no-repeat center .28rem/cover;
+    background-size:1.21rem;
+}
+.header-gy a:nth-child(2) figure{
+    background: url("../../images/mobile/z2.png")no-repeat center .28rem/cover;
+    background-size:1.21rem;
+}
+.header-gy a:nth-child(3) figure{
+    background: url("../../images/mobile/z3.png")no-repeat center .28rem/cover;
+    background-size:1.21rem;
+}
+.header-gy a:nth-child(4) figure{
+     background: url("../../images/mobile/z4.png")no-repeat center .28rem/cover;
+     background-size:1.21rem;
+ }
+
+.gaishu.gy{
+    margin-bottom: 0!important;
+}
+.zx.gy{
+    margin-top: 0!important;
+    line-height: 1.5;
+}
+
+.zx.gy.col{
+    font-weight: bold;
+    color: #01B5FF;
+}
+.zx.gy.col:last-child{
+    margin-bottom: 0.34rem!important;
+}
+
+.gaishu.xz{
+    height:4.5rem;
+    background: url("../../images/mobile/xzt.png") no-repeat center center/cover;
+    background-size: 5.33rem;
+}
+.zx.gy.xz{
+    text-align: center;
+    margin-bottom: 0.35rem!important;
+}
+.section-about.gw ul{
+    width:100%;
+    margin: 0;
+    padding: 0 0 0 .2rem;
+
+}
+.gaishu.gw{
+    margin-bottom: .06rem;
+}
+.section-about.gw ul li{
+    height:.56rem;
+    width:100%;
+    margin-bottom: .2rem;
+}
+.section-about.gw ul li:last-child{
+    margin-bottom: .3rem;
+}
+
+.section-about.gw ul li .left.gw{
+    width:.56rem;
+    height:.56rem;
+    float: left;
+    margin-right: 0.2rem;
+}
+.section-about.gw ul li:nth-child(1) .left.gw{
+    background: url("../../images/mobile/jy1.png") no-repeat center center /cover;
+}
+
+.section-about.gw ul li:nth-child(2) .left.gw{
+    background: url("../../images/mobile/jy2.png") no-repeat center center /cover;
+}
+.section-about.gw ul li:nth-child(3) .left.gw{
+    background: url("../../images/mobile/jy3.png") no-repeat center center /cover;
+}
+.section-about.gw ul li:nth-child(4) .left.gw{
+    background: url("../../images/mobile/jy1.png") no-repeat center center /cover;
+}
+.section-about.gw ul li:nth-child(5) .left.gw{
+    background: url("../../images/mobile/jy2.png") no-repeat center center /cover;
+}
+.section-about.gw ul li:nth-child(6) .left.gw{
+    background: url("../../images/mobile/jy3.png") no-repeat center center /cover;
+}
+
+.section-about.gw ul li .right .gw{
+    font-size: .21rem;
+    display: inline-block;
+    float: left;
+    color: #01B5FF;
+    margin: 0.08rem 0 0 0;
+}
+.section-about.gw ul li .right .gw small{
+    display: block;
+    color: #3E3A39;
+}
+
+.gaishu.ap{
+    height: 4.30rem;
+    background: url("../../images/mobile/kcap.png")no-repeat center center/cover;
+    background-size:6.40rem;
+    margin-bottom: 0;
+}
+.jy-uls{
+    margin-top: .45rem;
+    font-size: 0.21rem;
+    padding-left: 0;
+    border-left: 0.01rem dashed #01B5FF;
+}
+.jy-uls li{
+    position: relative;
+    height:0.7rem;
+    line-height: 0.7rem;
+}
+.lis-ll{
+    text-align: center;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+}
+.lis-ll:nth-child(2){
+    width: 20%;
+}
+.lis-ll:nth-child(3){
+    width: 25%;
+    color: #FFA201;
+}
+.lis-ll:nth-child(4){
+    width: 55%;
+}
+.jy-uls .list div{
+    width: .22rem;
+    height:.22rem;
+    background: #94E0FF;
+    position: absolute;
+    text-align: center;
+    line-height: .2rem;
+    border-radius: 50%;
+    left: -.11rem;
+    top:50%;
+    margin-top: -0.11rem;
+}
+
+.jy-uls .list div span{
+    width:.1rem;
+    height:.1rem;
+    background: #01B5FF;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.0rem;
+    top:0.0rem;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+
+/*热门问题详情*/
+.gaishu.l.rm{
+    padding-bottom: 0.3rem;
+    border-bottom: 0.01rem dashed #999;
+}
+.zx-bottom.rm{
+    margin-right: 0.2rem;
+    padding: 0 0.2rem!important;
+}
+.section-about.rm{
+    padding: 0 0.2rem 0 0;
+}
+.section-about.rm h6{
+    margin-left: .2rem;
+}
+
+.section-about.rm p{
+    padding-left: .2rem!important;
+}
+
+.paging{
+    height:.95rem;
+    font-size:.22rem;
+    padding-left: .2rem;
+    padding-top: 0.01rem;
+    padding-bottom: .3rem;
+}
+.paging a{
+    color: #000;
+}
+.paging a:nth-child(1){
+    display: block;
+    margin-top: 0.2rem;
+}
+.paging a span:nth-child(2){
+    color: #01B5FF;
+}
+.jy-uls.rm{
+    border: none;
+    margin: 0;
+}
+.jy-uls.rm a{
+    color: #000;
+}
+
+.jy-uls.rm:last-child a{
+    color: #01B5FF;
+}
+.gaishu.rm{
+    margin-bottom: .1rem!important;
+}
+.jy-uls.rm li{
+    padding-left: 0.2rem;
+    margin-top: -.16rem;
+}
+.jy-uls.rm li p{
+    margin: 0!important;
+}
+.jy-uls.rm div{
+    width:.2rem;
+    height:.2rem;
+    background: url("../../images/mobile/rmy.png")no-repeat;
+    border:none;
+    background-size: .2rem;
+}
+
+/*热门问题*/
+
+.section-about h6{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.section-about .ppt.rm{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box;
+    webkit-line-clamp:4;
+    -webkit-box-orient: vertical;
+
+}
+.jy-uls.rm.l{
+    margin-top: 0.3rem;
+}
+.jy-uls.rm.l a{
+    color: #757575;
+}
+.section-about.rm{
+    margin-bottom: 0;
+}
+.section-about.rm:last-child{
+    margin-bottom: 0.1rem;
+    padding-bottom: .2rem;
+}
+
+.aal-box{
+    text-align: center;
+    margin-top: .22rem;
+    border-bottom: 0.01rem dashed #999999;
+    box-sizing: border-box;
+    margin-left: 0.2rem;
+    padding-bottom: .22rem;
+}
+.section-about .aal{
+    font-size: 0.21rem;
+    color: #FF9C1E;
+    display: block;
+}
+
+.jy-uls.rm.l div{
+    top:.1rem;
+    left:.1rem;
+}
+
+.jy-uls .list.rm{
+    height:auto;
+    line-height: 0.35rem;
+}
+
+
+/*媒体报道*/
+.section-about.mt{
+    padding-bottom:0.28rem;
+    margin-bottom: .03rem;
+}
+.section-about.mt h6{
+    border: none;
+    padding-left: 0;
+    font-weight: 500;
+    color: #000;
+}
+
+.section-mt{
+    padding: 0 .2rem 0 0;
+    margin-top: .25rem;
+}
+.section-mt .mt-left{
+    width:1.97rem;
+    height:1.49rem;
+    float: left;
+    background: url("../../images/mobile/kuang.png")no-repeat center center/cover;
+    background-size: 1.97rem;
+    margin-left: .1rem;
+    position: relative;
+}
+.section-mt .mt-left img{
+    width: 100%;
+    height: 100%;
+    background: url("../../images/mobile/mt.png")no-repeat center center/cover;
+    position: absolute;
+    top:.1rem;
+    right:.1rem;
+}
+
+.section-mt .mt-right{
+    float: right;
+    font-size:.23rem;
+    color: #494747;
+}
+.section-mt .mt-right p{
+    width: 4.1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+.section-mt .mt-right a{
+    color: #494747;
+}
+.section-mt .mt-right p:nth-child(2){
+    margin-bottom: .2rem;
+}
+
+.section-mtbom{
+    height:0.6rem;
+    border-top:0.01rem solid #D2D2D2;
+    border-bottom:0.01rem solid #D2D2D2;
+    float: left;
+    font-size: .22rem;
+    color: #959595;
+    margin-top: .12rem;
+    width: 100%;
+    line-height: .6rem;
+    text-align: justify;
+}
+.section-mtbom:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+}
+.section-mtbom span{
+    padding-left: .5rem;
+    display: inline-block;
+}
+.section-mtbom span:nth-child(1){
+    background: url("../../images/mobile/23.png")no-repeat .1rem center  ;
+    background-size: .32rem;
+}
+.section-mtbom span:nth-child(2){
+    background: url("../../images/mobile/24.png")no-repeat .1rem center  ;
+    background-size: .32rem;
+}
+
+.section-mtbom span:nth-child(3){
+    background: url("../../images/mobile/25.png")no-repeat .1rem center  ;
+    background-size: .32rem;
+}

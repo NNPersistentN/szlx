@@ -1,0 +1,29 @@
+{template "content","header"}
+
+<!--内容-->
+
+<div class="section" style="padding-bottom: 0">
+    <div class="section-top"><span><a href="{siteurl($siteid)}">首页</a></span>〉<span>{catpos($catid)}</span></div>    
+    <div class="section-about">
+        <h6>概述</h6>
+        {pc:content action="category" catid="$catid" num="25"  siteid="$siteid" order="listorder" ASC moreinfo="1"}
+        <div class="wenhua xq">
+            <div style="width:140px" class="wenhua-left"><img style="height:100%;" src="{$r[thumb]}" alt=""></div>
+            <div class="wenhua-right">
+                <h5>{$r[title]} <span>/星级讲师</span></h5>
+                <p><span>专   业: </span>{$r[keywords]}</p>
+                <span>技   能: </span><p class="ppt">{$r[description]}</p>
+                <p><span>经   验: </span>入行十年以上</p>
+            </div>
+        </div>
+        {/pc}
+    </div>
+    <div class="section-about">
+        <h6>学员简介</h6>
+        {$content}
+    </div>
+
+</div>
+
+
+{template "content","footer"}

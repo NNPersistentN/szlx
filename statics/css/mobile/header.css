@@ -1,0 +1,82 @@
+@import url(normalize.css);
+*{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    text-decoration: none;
+}
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color:#000;
+    margin: 0;
+    padding: 0;
+    background: #F5F6FA!important;
+}
+.section-top span a{
+    color: #000;
+}
+header{
+    width:100%;
+    height:1.32rem;
+    background: #0078E6;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    padding: 0 0.11rem;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+header .imgs{
+    width:0.7rem;
+    margin-top: 0.60rem;
+    vertical-align: middle;
+    margin-right: 1.00rem;
+}
+.logo-size{
+    margin-top: -0.17rem;
+}
+.header-box span{
+    display: block;
+    margin-top: -0.60rem;
+    margin-left: 1.00rem;
+}
+
+/*轮播图*/
+.banner {
+
+}
+.banner img{
+    width:100%;
+}
+.banner .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 3.52rem!important;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.banner .swiper-slide:nth-child(1){
+    background: url("../../images/mobile/ban2.webp")no-repeat center center /cover;
+}
+.banner .swiper-slide:nth-child(2){
+    background: url("../../images/mobile/ban3.webp")no-repeat center center /cover;
+}
+.banner .swiper-slide:nth-child(3){
+    background: url("../../images/mobile/ban4.webp")no-repeat center center /cover;
+}
+.banner .swiper-slide:nth-child(4){
+    background: url("../../images/mobile/ban5.webp")no-repeat center center /cover;
+}
